@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+.container{
+    display: grid;
+   background-color: rgb(44, 44, 80);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'sidebar item2 item3 item4'
+        'sidebar item5 item6 item7'
+      ;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 800px;
+    width: 1500px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+h1,h2{
+    
+}
+.item1,.item2,.item3,.item4,.item5,.item6,.item7{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(27, 27, 68);
+    color: aliceblue;
+}
+.item2,.item3,.item4,.item5,.item6,.item7{
+    
+    
+}
+.item1{
+    grid-area: sidebar;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+.item2{
+    grid-area: item2;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+}
+.item3{
+    grid-area: item3;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.item4{
+    grid-area: item4;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.item5{
+    grid-area: item5;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.item6{
+    grid-area: item6;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.item7{
+    grid-area: item7;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+}
+.photo{
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    
+}
+.photo>h1,h2{
+    margin-left: 30px;
+}
+.photo>h1{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    margin: 20px;
+    margin-bottom: 70px;
+    border-color: aliceblue;
+    border-width: 10px;
+}
+.work,.play,.study,.exercise,.social,.selfcare{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 10px;
+}
+.hours{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.hours>h1{
+    font-size: 50px;
+}
+.time>h2{
+    margin-top: 20px;
+    color: rgb(72, 72, 158);
+    
+}
+.week{
+    color: rgb(72, 72, 158);
+    font-size: 10px;
+}
