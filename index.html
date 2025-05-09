@@ -15,18 +15,19 @@
         .container{
             display: grid;
            background-color: rgb(19, 19, 43);
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 400px 250px 250px 250px;
+            grid-template-rows: 250px 250px;
             grid-template-areas:
                 'sidebar item2 item3 item4'
                 'sidebar item5 item6 item7'
               ;
             column-gap: 20px;
-            row-gap: 20px;
+            row-gap: 180px;
             height: 800px;
             width: 1500px;
             margin-left: 40px;
             margin-top: 5px;
+            
         }
         h1,h2{
             
@@ -39,7 +40,7 @@
         }
         .item2,.item3,.item4,.item5,.item6,.item7{
             margin-top: 10px; 
-            height: 200px;  
+            height: 150px;  
         }.item6{
             margin-top: 17px;
         }.item5{
@@ -54,8 +55,9 @@
             margin-top: 100px;
             margin-bottom: 100px;
             background-color: rgb(27, 27, 68);
+            height: 600px;
         }
-        .bg2,.bg3,.bg4,.bg5,.bg6,.bg7{border-radius: 10px;}
+        .bg2,.bg3,.bg4,.bg5,.bg6,.bg7{border-radius: 10px; }
         .bg2{
             grid-area: item2;
             margin-top: 100px;
@@ -67,6 +69,7 @@
             margin-top: 100px;
             margin-bottom: 20px;
             background-color: rgb(80, 143, 202);
+        
         }
         .bg4{
             grid-area: item4;
@@ -93,6 +96,8 @@
             margin-bottom: 100px;
             margin-right: 20px;
             background-color: yellow;
+            
+        
         }
         .photo{
             border-radius: 10px;
@@ -147,6 +152,7 @@
     </style>
 </head>
 <body>
+    
     <div class="container">
         
         <div class="item1" >
@@ -263,6 +269,7 @@
                 <h1>Last week-2 hours</h1>
             </div>
         </div>
-    </div>   
+    </div> 
+     
 </body>
 </html>
